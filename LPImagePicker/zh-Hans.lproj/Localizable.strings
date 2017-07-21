@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  LPImagePickerSample
+
+  Created by paul on 2017/7/14.
+  Copyright © 2017年 litt1e-p. All rights reserved.
+*/
+
+Done = "完成";
+Choose = "选择";
+Cancel = "取消";
+chose = "张已选择";
+Delete = "删除";
+Edit = "编辑";
