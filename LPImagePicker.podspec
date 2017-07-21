@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/litt1e-p/LPImagePicker.git", :tag => "#{s.version}" }
   s.platform = :ios, '7.0'
   s.requires_arc = true
-  s.source_files = 'LPImagePicker/*'
+  s.source_files = 'LPImagePicker/**/*'
   s.dependency 'LPPhotoViewer'
   s.dependency 'LPImageGridView'
   s.frameworks = 'Foundation', 'UIKit'
