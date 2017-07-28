@@ -52,7 +52,7 @@
     LPImageGridView *gv = (LPImageGridView *)self.topViewController;
     gv.btnTintColor     = self.pickerTintColor;
 
-    UIBarButtonItem *leftBtn = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Done", nil) style:UIBarButtonItemStylePlain target:self action:@selector(leftBtnEvent)];
+    UIBarButtonItem *leftBtn = [[UIBarButtonItem alloc] initWithTitle:[self locStr:@"Done"] style:UIBarButtonItemStylePlain target:self action:@selector(leftBtnEvent)];
     leftBtn.tintColor                   = self.pickerTintColor ? : kLPImagePickerTintColor;
     gv.navigationItem.leftBarButtonItem = leftBtn;
 
@@ -71,8 +71,8 @@
 {
     if (!_rightBtn) {
         _rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_rightBtn setTitle:NSLocalizedString(@"Edit", nil) forState:UIControlStateNormal];
-        [_rightBtn setTitle:NSLocalizedString(@"Cancel", nil) forState:UIControlStateSelected];
+        [_rightBtn setTitle:[self locStr:@"Edit"] forState:UIControlStateNormal];
+        [_rightBtn setTitle:[self locStr:@"Cancel"] forState:UIControlStateSelected];
         [_rightBtn addTarget:self action:@selector(rightBtnEvent) forControlEvents:UIControlEventTouchUpInside];
     }
     return _rightBtn;
@@ -101,14 +101,14 @@
         self.tipLabel.textColor = self.pickerTintColor ? : kLPImagePickerTintColor;
         self.tipLabel.textAlignment = NSTextAlignmentLeft;
         self.tipLabel.font          = [UIFont systemFontOfSize:18.f];
-        self.tipLabel.text          = [NSString stringWithFormat:@"0 %@", NSLocalizedString(@"chose", nil)];
+        self.tipLabel.text          = [NSString stringWithFormat:@"0 %@", [self locStr:@"chose"]];
         UIBarButtonItem *tipBtn =[[UIBarButtonItem alloc] initWithCustomView:self.tipLabel];
         
         self.funcBtn                     = [UIButton buttonWithType:UIButtonTypeCustom];
         self.funcBtn.layer.cornerRadius  = 5.f;
         self.funcBtn.layer.masksToBounds = YES;
         self.funcBtn.titleEdgeInsets     = UIEdgeInsetsMake(3, 3, 3, 3);
-        [self.funcBtn setTitle:self.funcBtnTitle ? : NSLocalizedString(@"Delete", nil) forState:UIControlStateNormal];
+        [self.funcBtn setTitle:self.funcBtnTitle ? : [self locStr:@"Delete"] forState:UIControlStateNormal];
         [self.funcBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         self.funcBtn.titleLabel.font = funcBtnFont;
         [self.funcBtn setBackgroundColor:self.pickerTintColor ? : kLPImagePickerTintColor];
@@ -140,7 +140,7 @@
     self.rightBtn.selected = selected;
     LPImageGridView *gv    = (LPImageGridView *)self.topViewController;
     gv.enableEditState     = self.rightBtn.selected;
-    gv.title               = gv.enableEditState ? NSLocalizedString(@"Choose", nil) : nil;
+    gv.title               = gv.enableEditState ? [self locStr:@"Choose"] : nil;
     [self showToolBar:gv.enableEditState];
 }
 
@@ -169,11 +169,25 @@
         self.funcBtnClosure([self.selectedIndexes copy]);
     }
 }
+
+- (NSString *)locStr:(NSString *)str
+{
+    NSBundle *resourceBundle = nil;
+    NSBundle *classBundle = [NSBundle bundleForClass:[self class]];
+    NSURL *resourceBundleURL = [classBundle URLForResource:@"LPImagePickerBundle" withExtension:@"bundle"];
+    if (resourceBundleURL) {
+        resourceBundle = [[NSBundle alloc] initWithURL:resourceBundleURL];
+    } else {
+        resourceBundle = classBundle;
+    }
+    return NSLocalizedStringFromTableInBundle(str, @"LPImagePickerLocalizable", resourceBundle, nil);
+}
+
 #pragma mark - LPImageGridViewDelegate 📌
 - (void)didPickedImagesWithIndexes:(NSArray *)indexes
 {
     self.selectedIndexes = indexes;
-    self.tipLabel.text   = [NSString stringWithFormat:@"%zi %@", indexes.count, NSLocalizedString(@"chose", nil)];
+    self.tipLabel.text   = [NSString stringWithFormat:@"%zi %@", indexes.count, [self locStr:@"chose"]];
 }
 
 - (void)didSelectedImageWithIndex:(NSInteger)index

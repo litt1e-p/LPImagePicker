@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		044A0C6A1F16061700657314 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 044A0C691F16061700657314 /* main.m */; };
+		044A0C6D1F16061700657314 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 044A0C6C1F16061700657314 /* AppDelegate.m */; };
+		044A0C701F16061700657314 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044A0C6F1F16061700657314 /* ViewController.m */; };
+		044A0C731F16061700657314 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044A0C711F16061700657314 /* Main.storyboard */; };
+		044A0C751F16061700657314 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044A0C741F16061700657314 /* Assets.xcassets */; };
+		044A0C781F16061700657314 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044A0C761F16061700657314 /* LaunchScreen.storyboard */; };
+		97EB5B6D31538A39BF2D69C7 /* libPods-LPImagePickerSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 991CEA6A57B7872AC5F1D828 /* libPods-LPImagePickerSample.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		044A0C651F16061700657314 /* LPImagePickerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LPImagePickerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		044A0C691F16061700657314 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		044A0C6B1F16061700657314 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
+		044A0C6C1F16061700657314 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
+		044A0C6E1F16061700657314 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		044A0C6F1F16061700657314 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		044A0C721F16061700657314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		044A0C741F16061700657314 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		044A0C771F16061700657314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		044A0C791F16061700657314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		991CEA6A57B7872AC5F1D828 /* libPods-LPImagePickerSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LPImagePickerSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFA79543D44345AEFDC8FE95 /* Pods-LPImagePickerSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPImagePickerSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LPImagePickerSample/Pods-LPImagePickerSample.debug.xcconfig"; sourceTree = "<group>"; };
+		C878BA7098C79DF5C4754745 /* Pods-LPImagePickerSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPImagePickerSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-LPImagePickerSample/Pods-LPImagePickerSample.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		044A0C621F16061700657314 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97EB5B6D31538A39BF2D69C7 /* libPods-LPImagePickerSample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		044A0C5C1F16061700657314 = {
+			isa = PBXGroup;
+			children = (
+				0A00A4C2A0B04F6EB24EC47C /* Frameworks */,
+				044A0C671F16061700657314 /* LPImagePickerSample */,
+				FCAF8648B8EE7A7AB63B70C6 /* Pods */,
+				044A0C661F16061700657314 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		044A0C661F16061700657314 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				044A0C651F16061700657314 /* LPImagePickerSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		044A0C671F16061700657314 /* LPImagePickerSample */ = {
+			isa = PBXGroup;
+			children = (
+				044A0C681F16061700657314 /* Supporting Files */,
+				044A0C6E1F16061700657314 /* ViewController.h */,
+				044A0C6F1F16061700657314 /* ViewController.m */,
+			);
+			path = LPImagePickerSample;
+			sourceTree = "<group>";
+		};
+		044A0C681F16061700657314 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				044A0C6B1F16061700657314 /* AppDelegate.h */,
+				044A0C6C1F16061700657314 /* AppDelegate.m */,
+				044A0C741F16061700657314 /* Assets.xcassets */,
+				044A0C791F16061700657314 /* Info.plist */,
+				044A0C761F16061700657314 /* LaunchScreen.storyboard */,
+				044A0C711F16061700657314 /* Main.storyboard */,
+				044A0C691F16061700657314 /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A00A4C2A0B04F6EB24EC47C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				991CEA6A57B7872AC5F1D828 /* libPods-LPImagePickerSample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCAF8648B8EE7A7AB63B70C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFA79543D44345AEFDC8FE95 /* Pods-LPImagePickerSample.debug.xcconfig */,
+				C878BA7098C79DF5C4754745 /* Pods-LPImagePickerSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		044A0C641F16061700657314 /* LPImagePickerSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 044A0C7C1F16061700657314 /* Build configuration list for PBXNativeTarget "LPImagePickerSample" */;
+			buildPhases = (
+				7ED2CD0E91030646E782A79A /* [CP] Check Pods Manifest.lock */,
+				044A0C611F16061700657314 /* Sources */,
+				044A0C621F16061700657314 /* Frameworks */,
+				044A0C631F16061700657314 /* Resources */,
+				B0F70BE39B49874F95348FB9 /* [CP] Embed Pods Frameworks */,
+				6CDFA2B22EECCBC3C434B687 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LPImagePickerSample;
+			productName = LPImagePickerSample;
+			productReference = 044A0C651F16061700657314 /* LPImagePickerSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		044A0C5D1F16061700657314 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "litt1e-p";
+				TargetAttributes = {
+					044A0C641F16061700657314 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 044A0C601F16061700657314 /* Build configuration list for PBXProject "LPImagePickerSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 044A0C5C1F16061700657314;
+			productRefGroup = 044A0C661F16061700657314 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				044A0C641F16061700657314 /* LPImagePickerSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		044A0C631F16061700657314 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044A0C781F16061700657314 /* LaunchScreen.storyboard in Resources */,
+				044A0C751F16061700657314 /* Assets.xcassets in Resources */,
+				044A0C731F16061700657314 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6CDFA2B22EECCBC3C434B687 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LPImagePickerSample/Pods-LPImagePickerSample-resources.sh",
+				"${PODS_ROOT}/LPImageGridView/LPImageGridView/LPImageGridView.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/LPImagePicker/LPImagePickerBundle.bundle,
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LPImagePickerSample/Pods-LPImagePickerSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7ED2CD0E91030646E782A79A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LPImagePickerSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0F70BE39B49874F95348FB9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LPImagePickerSample/Pods-LPImagePickerSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		044A0C611F16061700657314 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044A0C701F16061700657314 /* ViewController.m in Sources */,
+				044A0C6D1F16061700657314 /* AppDelegate.m in Sources */,
+				044A0C6A1F16061700657314 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		044A0C711F16061700657314 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				044A0C721F16061700657314 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ../.;
+			sourceTree = "<group>";
+		};
+		044A0C761F16061700657314 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				044A0C771F16061700657314 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ../.;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		044A0C7A1F16061700657314 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		044A0C7B1F16061700657314 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		044A0C7D1F16061700657314 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFA79543D44345AEFDC8FE95 /* Pods-LPImagePickerSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = LPImagePickerSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.litt1e-p.LPImagePickerSample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		044A0C7E1F16061700657314 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C878BA7098C79DF5C4754745 /* Pods-LPImagePickerSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = LPImagePickerSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.litt1e-p.LPImagePickerSample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		044A0C601F16061700657314 /* Build configuration list for PBXProject "LPImagePickerSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044A0C7A1F16061700657314 /* Debug */,
+				044A0C7B1F16061700657314 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		044A0C7C1F16061700657314 /* Build configuration list for PBXNativeTarget "LPImagePickerSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044A0C7D1F16061700657314 /* Debug */,
+				044A0C7E1F16061700657314 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 044A0C5D1F16061700657314 /* Project object */;
+}
