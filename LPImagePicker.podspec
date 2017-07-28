@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "LPImagePicker"
-  s.version          = "0.0.1"
+  s.version          = "0.0.2"
   s.summary          = "image/photo browser for picking custom image source"
   s.description      = <<-DESC
 			a simple image/photo browser for picking image/photo(supports custom image source)                       
@@ -11,7 +11,10 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/litt1e-p/LPImagePicker.git", :tag => "#{s.version}" }
   s.platform = :ios, '7.0'
   s.requires_arc = true
-  s.source_files = 'LPImagePicker/**/*'
+  s.source_files = 'LPImagePicker/**/*.{h,m}'
+  s.resource_bundles = {
+    'LPImagePickerBundle' => ['LPImagePicker/**/*.lproj']
+  }
   s.dependency 'LPPhotoViewer'
   s.dependency 'LPImageGridView'
   s.frameworks = 'Foundation', 'UIKit'
