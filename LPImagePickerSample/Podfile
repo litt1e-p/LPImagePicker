@@ -6,7 +6,7 @@ target 'LPImagePickerSample' do
   # use_frameworks!
 
   # Pods for LPImagePickerSample
-#  pod 'LPImagePicker'
-  pod 'LPImagePicker', :path => '~/Desktop/demo-prjs/LPImagePicker'
+  pod 'LPImagePicker'
+#  pod 'LPImagePicker', :path => '~/Desktop/demo-prjs/LPImagePicker'
 
 end
