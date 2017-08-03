@@ -166,7 +166,7 @@
 - (void)funcBtnEvent
 {
     if (self.funcBtnClosure) {
-        self.funcBtnClosure([self.selectedIndexes copy]);
+        self.funcBtnClosure(self, [self.selectedIndexes copy]);
     }
 }
 
@@ -184,13 +184,13 @@
 }
 
 #pragma mark - LPImageGridViewDelegate 📌
-- (void)didPickedImagesWithIndexes:(NSArray *)indexes
+- (void)imageGridView:(LPImageGridView *)imageGridView didPickedImagesWithIndexes:(NSArray *)indexes
 {
     self.selectedIndexes = indexes;
     self.tipLabel.text   = [NSString stringWithFormat:@"%zi %@", indexes.count, [self locStr:@"chose"]];
 }
 
-- (void)didSelectedImageWithIndex:(NSInteger)index
+- (void)imageGridView:(LPImageGridView *)imageGridView didSelectedImageWithIndex:(NSInteger)index
 {
     //show photoViewer
     LPPhotoViewer *viewer = [[LPPhotoViewer alloc] init];

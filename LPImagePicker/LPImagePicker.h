@@ -21,9 +21,10 @@
 // SOFTWARE.
 
 #import <UIKit/UIKit.h>
+@class LPImagePicker;
 
 typedef void(^LPImagePickerLeftBtnClosure) ();
-typedef void(^LPImagePickerToobarFunctionBtnClosure) (NSArray *selectedIndexes);
+typedef void(^LPImagePickerToobarFunctionBtnClosure) (LPImagePicker *imagePicker, NSArray *selectedIndexes);
 
 @interface LPImagePicker : UINavigationController
 

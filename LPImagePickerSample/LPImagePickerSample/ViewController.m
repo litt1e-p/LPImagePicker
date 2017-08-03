@@ -70,7 +70,7 @@
     pk.funcBtnTitle       = @"export";
     __weak typeof(pk)wspk = pk;
     __weak typeof(self)ws = self;
-    pk.funcBtnClosure     = ^(NSArray *selectedIndexes) {
+    pk.funcBtnClosure     = ^(LPImagePicker *imagePicker, NSArray *selectedIndexes) {
         NSLog(@"selectedIndexes: %zi", selectedIndexes.count);
         [ws updateImagesWithExclusiveIndexes:selectedIndexes];
         wspk.images = [ws.imgArr copy];
@@ -103,12 +103,12 @@
 
 #pragma mark - LPImagePickerControllerDelegate 📌
 
-- (void)didPickedImagesWithIndexs:(NSArray *)indexs
+- (void)imageGridView:(LPImageGridView *)imageGridView didPickedImagesWithIndexs:(NSArray *)indexs
 {
     NSLog(@"%@", indexs);
 }
 
-- (void)didSelectedImageWithIndex:(NSInteger)index
+- (void)imageGridView:(LPImageGridView *)imageGridView didSelectedImageWithIndex:(NSInteger)index
 {
     //show photoViewer
     LPPhotoViewer *viewer = [[LPPhotoViewer alloc] init];
