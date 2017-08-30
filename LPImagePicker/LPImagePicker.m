@@ -49,22 +49,23 @@
 - (void)viewDidLayoutSubviews
 {
     [super viewDidLayoutSubviews];
-    LPImageGridView *gv = (LPImageGridView *)self.topViewController;
-    gv.btnTintColor     = self.pickerTintColor;
+    LPImageGridView *gv                   = (LPImageGridView *)self.topViewController;
+    gv.btnTintColor                       = self.pickerTintColor;
+    gv.removeDiskCacheWhenSelectImage     = self.removeDiskCacheWhenSelectImage;
 
-    UIBarButtonItem *leftBtn = [[UIBarButtonItem alloc] initWithTitle:[self locStr:@"Done"] style:UIBarButtonItemStylePlain target:self action:@selector(leftBtnEvent)];
-    leftBtn.tintColor                   = self.pickerTintColor ? : kLPImagePickerTintColor;
-    gv.navigationItem.leftBarButtonItem = leftBtn;
+    UIBarButtonItem *leftBtn              = [[UIBarButtonItem alloc] initWithTitle:[self locStr:@"Done"] style:UIBarButtonItemStylePlain target:self action:@selector(leftBtnEvent)];
+    leftBtn.tintColor                     = self.pickerTintColor ? : kLPImagePickerTintColor;
+    gv.navigationItem.leftBarButtonItem   = leftBtn;
 
-    self.rightBtn.frame          = CGRectMake(0, 0, 70, 44);
+    self.rightBtn.frame                   = CGRectMake(0, 0, 70, 44);
     [self.rightBtn setTitleColor:self.pickerTintColor ? : kLPImagePickerTintColor forState:UIControlStateNormal];
-    UIBarButtonItem *rightBarBtn = [[UIBarButtonItem alloc] initWithCustomView:self.rightBtn];
-    UIBarButtonItem *spaceFixBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-    spaceFixBtn.width            = -16;
+    UIBarButtonItem *rightBarBtn          = [[UIBarButtonItem alloc] initWithCustomView:self.rightBtn];
+    UIBarButtonItem *spaceFixBtn          = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+    spaceFixBtn.width                     = -16;
     gv.navigationItem.rightBarButtonItems = @[spaceFixBtn, rightBarBtn];
 
-    self.selectedIndexes = nil;
-    self.rightBtn.hidden = self.images.count <= 0;
+    self.selectedIndexes                  = nil;
+    self.rightBtn.hidden                  = self.images.count <= 0;
 }
 
 - (UIButton *)rightBtn

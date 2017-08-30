@@ -33,6 +33,7 @@ typedef void(^LPImagePickerToobarFunctionBtnClosure) (LPImagePicker *imagePicker
 @property (nonatomic, strong) UIColor *pickerTintColor;
 @property (nonatomic, copy) LPImagePickerLeftBtnClosure leftBtnClosure;
 @property (nonatomic, copy) LPImagePickerToobarFunctionBtnClosure funcBtnClosure;
+@property (nonatomic, assign) BOOL removeDiskCacheWhenSelectImage;
 @property (nonatomic, strong) NSArray *images;
 
 @end
