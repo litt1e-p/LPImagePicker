@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "LPImagePicker"
-  s.version          = "0.0.3"
+  s.version          = "0.0.4"
   s.summary          = "image/photo browser for picking custom image source"
   s.description      = <<-DESC
 			a simple image/photo browser for picking image/photo(supports custom image source)                       
